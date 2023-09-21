@@ -16,6 +16,7 @@ class ToDo(db.Model):
     date_created = db.Column(db.DateTime, default=datetime.utcnow)
 
     def __repr__(self):
+        print('pp')
         return '<Task %r>' % self.id
 
 @app.route('/')
